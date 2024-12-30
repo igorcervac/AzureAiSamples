@@ -18,10 +18,24 @@ class Program
 
         var now = DateTime.Now;
         var timeString = $"Time is {now.Hour} : {now.Minute:D2}";
-        SpeechSynthesisResult result = await speechSynthesizer.SpeakTextAsync(timeString);
+        var ssml = $@"
+        <speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xml:lang='en-US'>
+            <voice name='en-GB-RyanNeural'>
+                {timeString}
+                <break time='1000ms'/>
+            </voice>
+            <voice name='en-GB-LibbyNeural'>
+                {timeString}
+            </voice>
+        </speak>
+        ";
+
+        SpeechSynthesisResult result = await speechSynthesizer.SpeakSsmlAsync(ssml);
+
         if (result.Reason != ResultReason.SynthesizingAudioCompleted)
         {
             Console.WriteLine(result.Reason);
         }
+
     }
 }
