@@ -27,7 +27,5 @@ class Program
                 Console.WriteLine($"{string.Join(" ", extractiveSummarizeResult.Sentences.Select(x => x.Text))}");
             }
         }
-
-        Console.ReadLine();
     }
 }
