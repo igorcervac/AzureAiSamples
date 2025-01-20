@@ -1,5 +1,5 @@
-set "group=az-ai-snippets-speech-rg"
 set "name=az-ai-snippets-speech"
+set "group=%name%-rg"
 set "location=eastus"
 set "kind=SpeechServices"
 set "sku=F0"

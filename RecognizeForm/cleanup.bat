@@ -1,5 +1,5 @@
-set "group=az-ai-snippets-formrecognizer-rg"
 set "name=az-ai-snippets-formrecognizer"
+set "group=%name%-rg"
 set "location=eastus"
 set "kind=FormRecognizer"
 set "sku=F0"

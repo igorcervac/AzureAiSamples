@@ -1,5 +1,5 @@
-set "group=az-ai-snippets-textanalytics-rg"
 set "name=az-ai-snippets-textanalytics"
+set "group=%name%-rg"
 set "location=eastus"
 set "kind=TextAnalytics"
 set "sku=F0"

@@ -1,5 +1,5 @@
-set "group=az-ai-snippets-vision-rg"
 set "name=az-ai-snippets-vision"
+set "group=%name%-rg"
 set "location=eastus"
 set "kind=ComputerVision"
 set "sku=F0"
