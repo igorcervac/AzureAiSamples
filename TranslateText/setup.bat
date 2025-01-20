@@ -1,5 +1,5 @@
-set "group=az-ai-snippets-translator-rg"
 set "name=az-ai-snippets-translator"
+set "group=%name%-rg"
 set "location=eastus"
 
 call az group create --name %group% --location %location%
